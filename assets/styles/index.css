@@ -42,10 +42,13 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .intro {
   max-width: 480px;
+  flex: 1 1 100%; /* Full width on smaller screens */
+  margin-bottom: 20px;
 }
 
 .role {
@@ -91,18 +94,34 @@ body {
 
 /* Image Section */
 .intro-img {
-  position: relative;
-  width: 720px;
-  height: 629px;
-  border-radius: 20px;
+  flex: 1 1 100%; /* Full width on smaller screens */
+  max-width: 720px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .intro-img img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 20px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .hero {
+    flex-wrap: nowrap; /* Side-by-side layout on larger screens */
+  }
+  .intro {
+    flex: 1;
+  }
+  .intro-img {
+    flex: 1;
+    max-width: 100%; /* Ensure it scales with container */
+    height: auto;
+  }
 }

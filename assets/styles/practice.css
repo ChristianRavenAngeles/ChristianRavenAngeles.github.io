@@ -1,0 +1,108 @@
+/* General Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 18px;
+}
+
+.desktop-nav a {
+  margin-left: 24px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.intro {
+  max-width: 480px;
+}
+
+.role {
+  color: #F6AA1C;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.projects-btn {
+  background-color: #F6AA1C;
+  color: #fff;
+}
+
+.linkedin-btn {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #ddd;
+}
+
+/* Image Section */
+.intro-img {
+  position: relative;
+  width: 720px;
+  height: 629px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.intro-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
